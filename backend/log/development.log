@@ -1,0 +1,369 @@
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTrainers (20210126230117)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210126230117"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePokemonTeams (20210126230412)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pokemon_teams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "trainer_id" integer NOT NULL, "pokemon_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_76cee7fdec"
+FOREIGN KEY ("trainer_id")
+  REFERENCES "trainers" ("id")
+, CONSTRAINT "fk_rails_12ead17a3e"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_teams_on_trainer_id" ON "pokemon_teams" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_teams_on_pokemon_id" ON "pokemon_teams" ("pokemon_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210126230412"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePokemons (20210126231630)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "type" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210126231630"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-26 23:16:48.068236"], ["updated_at", "2021-01-26 23:16:48.068236"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePokemons (20210126231630)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "pokemons"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210126231630"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePokemons (20210126231630)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "pokeType" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210126231630"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePokemons (20210126231630)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (10.9ms)[0m  [1m[35mDROP TABLE "pokemons"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210126231630"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePokemonTeams (20210126230412)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "pokemon_teams"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210126230412"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePokemons (20210126231630)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "pokeType" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210126231630"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePokemonTrainers (20210126232420)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+, CONSTRAINT "fk_rails_d0b9b6b6fc"
+FOREIGN KEY ("trainer_id")
+  REFERENCES "trainers" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210126232420"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.5ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bulbasaur"], ["pokeType", "Grass"], ["created_at", "2021-01-26 23:27:02.501586"], ["updated_at", "2021-01-26 23:27:02.501586"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Squirtle"], ["pokeType", "Water"], ["created_at", "2021-01-26 23:27:02.504885"], ["updated_at", "2021-01-26 23:27:02.504885"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charmander"], ["pokeType", "Fire"], ["created_at", "2021-01-26 23:27:02.507524"], ["updated_at", "2021-01-26 23:27:02.507524"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pidgey"], ["pokeType", "Normal"], ["created_at", "2021-01-26 23:27:02.510391"], ["updated_at", "2021-01-26 23:27:02.510391"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokeType", "Electric"], ["created_at", "2021-01-26 23:27:02.513030"], ["updated_at", "2021-01-26 23:27:02.513030"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gengar"], ["pokeType", "Ghost"], ["created_at", "2021-01-26 23:27:02.515693"], ["updated_at", "2021-01-26 23:27:02.515693"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mew"], ["pokeType", "Psychic"], ["created_at", "2021-01-26 23:27:02.518177"], ["updated_at", "2021-01-26 23:27:02.518177"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jack"], ["gender", "Male"], ["created_at", "2021-01-26 23:27:02.523655"], ["updated_at", "2021-01-26 23:27:02.523655"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Obinna"], ["gender", "Male"], ["created_at", "2021-01-26 23:27:02.526448"], ["updated_at", "2021-01-26 23:27:02.526448"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Reed"], ["gender", "Male"], ["created_at", "2021-01-26 23:27:02.528947"], ["updated_at", "2021-01-26 23:27:02.528947"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.6ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bulbasaur"], ["pokeType", "Grass"], ["created_at", "2021-01-26 23:29:03.748886"], ["updated_at", "2021-01-26 23:29:03.748886"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Squirtle"], ["pokeType", "Water"], ["created_at", "2021-01-26 23:29:03.751656"], ["updated_at", "2021-01-26 23:29:03.751656"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Charmander"], ["pokeType", "Fire"], ["created_at", "2021-01-26 23:29:03.754216"], ["updated_at", "2021-01-26 23:29:03.754216"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pidgey"], ["pokeType", "Normal"], ["created_at", "2021-01-26 23:29:03.756572"], ["updated_at", "2021-01-26 23:29:03.756572"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokeType", "Electric"], ["created_at", "2021-01-26 23:29:03.759187"], ["updated_at", "2021-01-26 23:29:03.759187"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gengar"], ["pokeType", "Ghost"], ["created_at", "2021-01-26 23:29:03.761658"], ["updated_at", "2021-01-26 23:29:03.761658"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mew"], ["pokeType", "Psychic"], ["created_at", "2021-01-26 23:29:03.764278"], ["updated_at", "2021-01-26 23:29:03.764278"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jack"], ["gender", "Male"], ["created_at", "2021-01-26 23:29:03.766891"], ["updated_at", "2021-01-26 23:29:03.766891"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Obinna"], ["gender", "Male"], ["created_at", "2021-01-26 23:29:03.769457"], ["updated_at", "2021-01-26 23:29:03.769457"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Reed"], ["gender", "Male"], ["created_at", "2021-01-26 23:29:03.771957"], ["updated_at", "2021-01-26 23:29:03.771957"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 13], ["trainer_id", 4], ["created_at", "2021-01-26 23:29:03.782974"], ["updated_at", "2021-01-26 23:29:03.782974"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 9], ["trainer_id", 4], ["created_at", "2021-01-26 23:29:03.785801"], ["updated_at", "2021-01-26 23:29:03.785801"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 12], ["trainer_id", 4], ["created_at", "2021-01-26 23:29:03.788410"], ["updated_at", "2021-01-26 23:29:03.788410"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 14], ["trainer_id", 5], ["created_at", "2021-01-26 23:29:03.807450"], ["updated_at", "2021-01-26 23:29:03.807450"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 10], ["trainer_id", 5], ["created_at", "2021-01-26 23:29:03.810463"], ["updated_at", "2021-01-26 23:29:03.810463"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 11], ["trainer_id", 6], ["created_at", "2021-01-26 23:29:03.813105"], ["updated_at", "2021-01-26 23:29:03.813105"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 8], ["trainer_id", 6], ["created_at", "2021-01-26 23:29:03.815642"], ["updated_at", "2021-01-26 23:29:03.815642"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" ORDER BY "trainers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ? /* loading for inspect */ LIMIT ?[0m  [["trainer_id", 4], ["LIMIT", 11]]
+Started GET "/pokemon.js" for ::1 at 2021-01-26 16:43:27 -0700
+Started GET "/browser-sync/browser-sync-client.js?v=2.26.13" for ::1 at 2021-01-26 16:43:27 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/pokemon.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/browser-sync-client.js"):
+  
+Started GET "/pokemon.html?id=267" for ::1 at 2021-01-26 16:43:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pokemon.html"):
+  
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddImageToPokemon (20210127172337)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "pokemons" ADD "image" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210127172337"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.6ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.9ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrainer Load (0.4ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.8ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bulbasaur"], ["pokeType", "Grass"], ["created_at", "2021-01-27 17:27:17.971392"], ["updated_at", "2021-01-27 17:27:17.971392"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/bulbasaur.png"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Squirtle"], ["pokeType", "Water"], ["created_at", "2021-01-27 17:27:17.975329"], ["updated_at", "2021-01-27 17:27:17.975329"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/squirtle.png"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["pokeType", "Fire"], ["created_at", "2021-01-27 17:27:17.978448"], ["updated_at", "2021-01-27 17:27:17.978448"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/charmander.png"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pidgey"], ["pokeType", "Normal"], ["created_at", "2021-01-27 17:27:17.981329"], ["updated_at", "2021-01-27 17:27:17.981329"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/pidgey.png"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokeType", "Electric"], ["created_at", "2021-01-27 17:27:17.984099"], ["updated_at", "2021-01-27 17:27:17.984099"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/pikachu.png"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gengar"], ["pokeType", "Ghost"], ["created_at", "2021-01-27 17:27:17.987264"], ["updated_at", "2021-01-27 17:27:17.987264"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/gengar.png"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mew"], ["pokeType", "Psychic"], ["created_at", "2021-01-27 17:27:17.989993"], ["updated_at", "2021-01-27 17:27:17.989993"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/mew.png"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jack"], ["gender", "Male"], ["created_at", "2021-01-27 17:27:17.992729"], ["updated_at", "2021-01-27 17:27:17.992729"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Obinna"], ["gender", "Male"], ["created_at", "2021-01-27 17:27:17.995324"], ["updated_at", "2021-01-27 17:27:17.995324"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Reed"], ["gender", "Male"], ["created_at", "2021-01-27 17:27:17.998703"], ["updated_at", "2021-01-27 17:27:17.998703"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 20], ["trainer_id", 7], ["created_at", "2021-01-27 17:27:18.004846"], ["updated_at", "2021-01-27 17:27:18.004846"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 16], ["trainer_id", 7], ["created_at", "2021-01-27 17:27:18.019159"], ["updated_at", "2021-01-27 17:27:18.019159"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 19], ["trainer_id", 7], ["created_at", "2021-01-27 17:27:18.055399"], ["updated_at", "2021-01-27 17:27:18.055399"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 21], ["trainer_id", 8], ["created_at", "2021-01-27 17:27:18.058234"], ["updated_at", "2021-01-27 17:27:18.058234"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-27 17:27:18.064235"], ["updated_at", "2021-01-27 17:27:18.064235"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 18], ["trainer_id", 9], ["created_at", "2021-01-27 17:27:18.067294"], ["updated_at", "2021-01-27 17:27:18.067294"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 15], ["trainer_id", 9], ["created_at", "2021-01-27 17:27:18.075013"], ["updated_at", "2021-01-27 17:27:18.075013"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
