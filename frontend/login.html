@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Welcome Trainer!</title>
     <link rel="stylesheet" href="login.css">
     <script defer src="login.js"></script>
 </head>
 <body>
     <main id="main-holder">
-        <h1 id="login-header">Login</h1>
-        
-        <div id="login-error-msg-holder">
-          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        <h1 id="trainer-header">Hello there!</h1>
+        <div id="oak-div">
+            <p class="welcome-message">Welcome to the world of Pokémon! My name is Oak!</p>
+            <p class="welcome-message">People call me the Pokémon Prof!</p>
+            <img id="oak" src="https://cdn.bulbagarden.net/upload/thumb/3/3e/Lets_Go_Pikachu_Eevee_Professor_Oak.png/180px-Lets_Go_Pikachu_Eevee_Professor_Oak.png">
         </div>
-        
-        <form id="login-form">
-          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-          <input type="submit" value="Login" id="login-form-submit">
+        <form id="add-trainer">
+            <div id="name-div">
+                <label for="name-field">What is your name?
+                <input type="name" name="name" id="name-field" class="trainer-form-field" placeholder="Name">
+                </label>
+            </div>
+            <div id="gender-div">
+                <label>Are you a boy or a girl?
+                <label for="boy">
+                    Boy<input type="radio" id="boy" name="gender" value="boy">
+                </label>
+                <label for="girl">
+                    Girl<input type="radio" id="girl" name="gender" value="girl">
+                </label>
+                </label>
+            </div>
+            <input type="submit" value="Get Started" id="add-trainer-submit">
         </form>
-      
     </main>
 </body>
 </html>

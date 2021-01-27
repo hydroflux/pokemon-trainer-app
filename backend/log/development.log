@@ -367,3 +367,780 @@ Migrating to AddImageToPokemon (20210127172337)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mPokemonTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 15], ["trainer_id", 9], ["created_at", "2021-01-27 17:27:18.075013"], ["updated_at", "2021-01-27 17:27:18.075013"]]
   [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrainer Load (0.4ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RU83" for ::1 at 2021-01-27 12:59:25 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RURb" for ::1 at 2021-01-27 12:59:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RVBO" for ::1 at 2021-01-27 12:59:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RVLc" for ::1 at 2021-01-27 12:59:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RWQB" for ::1 at 2021-01-27 12:59:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RWc7" for ::1 at 2021-01-27 12:59:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RXns" for ::1 at 2021-01-27 12:59:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RY1U" for ::1 at 2021-01-27 12:59:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RZFw" for ::1 at 2021-01-27 12:59:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RZVD" for ::1 at 2021-01-27 12:59:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RawJ" for ::1 at 2021-01-27 12:59:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5Rb8u" for ::1 at 2021-01-27 12:59:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RcV_" for ::1 at 2021-01-27 12:59:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5Rcnh" for ::1 at 2021-01-27 13:00:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RduU" for ::1 at 2021-01-27 13:00:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5Re85" for ::1 at 2021-01-27 13:00:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RfRM" for ::1 at 2021-01-27 13:00:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5Rfoo" for ::1 at 2021-01-27 13:00:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5Rgpz" for ::1 at 2021-01-27 13:00:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RhSG" for ::1 at 2021-01-27 13:00:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RikI" for ::1 at 2021-01-27 13:00:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5Rin6" for ::1 at 2021-01-27 13:00:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5Rk4J" for ::1 at 2021-01-27 13:00:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RkJs" for ::1 at 2021-01-27 13:00:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NT5RlSr" for ::1 at 2021-01-27 13:00:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/trainers" for ::1 at 2021-01-27 13:13:29 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.5ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  ↳ app/controllers/trainers_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 5.1ms | ActiveRecord: 1.1ms | Allocations: 8321)
+
+
+Started GET "/login.html" for ::1 at 2021-01-27 13:17:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/login.html"):
+  
+Started GET "/trainers" for ::1 at 2021-01-27 13:21:52 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.4ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  ↳ app/controllers/trainers_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 7.9ms | ActiveRecord: 0.9ms | Allocations: 8339)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:18 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:18 -0700
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>""}
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>""}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (1.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:18.101200"], ["updated_at", "2021-01-27 20:22:18.101200"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 5125ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 7496)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:23 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:23 -0700
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>""}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:23.226586"], ["updated_at", "2021-01-27 20:22:23.226586"]]
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:23 -0700
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Processing by TrainersController#create as HTML
+  [1m[36mTrainer Create (5097.0ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:18.100649"], ["updated_at", "2021-01-27 20:22:18.100649"]]
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>""}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:23 -0700
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 5135ms (ActiveRecord: 5097.4ms | Allocations: 12162)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/trainers_controller.rb:10:in `create'
+  Parameters: {"name"=>""}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by TrainersController#create as HTML
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 5335)
+
+
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:23.236354"], ["updated_at", "2021-01-27 20:22:23.236354"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  Parameters: {"name"=>""}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:23 -0700
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Processing by TrainersController#create as HTML
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:23.242168"], ["updated_at", "2021-01-27 20:22:23.242168"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:23.239000"], ["updated_at", "2021-01-27 20:22:23.239000"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 3920)
+
+
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  Parameters: {"name"=>""}
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 8268)
+
+
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:23 -0700
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 7184)
+
+
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:23.251607"], ["updated_at", "2021-01-27 20:22:23.251607"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 127ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 87059)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:23 -0700
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>""}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:23.429556"], ["updated_at", "2021-01-27 20:22:23.429556"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 1920)
+
+
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>""}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:23 -0700
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:23.437035"], ["updated_at", "2021-01-27 20:22:23.437035"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Processing by TrainersController#create as HTML
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 7212)
+
+
+  Parameters: {"name"=>""}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ""], ["created_at", "2021-01-27 20:22:23.444844"], ["updated_at", "2021-01-27 20:22:23.444844"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 1766)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 13:22:33 -0700
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>"Oak", "gender"=>"boy"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Oak"], ["gender", "boy"], ["created_at", "2021-01-27 20:22:33.975318"], ["updated_at", "2021-01-27 20:22:33.975318"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1784)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 13:34:02 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 13:34:02 -0700
+Processing by TrainersController#create as HTML
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>"jack"}
+  Parameters: {"name"=>"jack"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "jack"], ["created_at", "2021-01-27 20:34:02.924976"], ["updated_at", "2021-01-27 20:34:02.924976"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 5143ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 3709)
+
+
+  [1m[36mTrainer Create (5136.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "jack"], ["created_at", "2021-01-27 20:34:02.925620"], ["updated_at", "2021-01-27 20:34:02.925620"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 5147ms (ActiveRecord: 5136.7ms | Allocations: 7836)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/trainers_controller.rb:10:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 13:34:27 -0700
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>"jack", "gender"=>"boy"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jack"], ["gender", "boy"], ["created_at", "2021-01-27 20:34:27.676048"], ["updated_at", "2021-01-27 20:34:27.676048"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 1779)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 13:35:05 -0700
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>"jack", "gender"=>"boy"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.5ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jack"], ["gender", "boy"], ["created_at", "2021-01-27 20:35:05.627403"], ["updated_at", "2021-01-27 20:35:05.627403"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 204 No Content in 32ms (ActiveRecord: 2.5ms | Allocations: 9811)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 13:35:06 -0700
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>"jack", "gender"=>"boy"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.8ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jack"], ["gender", "boy"], ["created_at", "2021-01-27 20:35:06.857876"], ["updated_at", "2021-01-27 20:35:06.857876"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 204 No Content in 24ms (ActiveRecord: 1.5ms | Allocations: 1671)
+
+
+Started GET "/login.html" for ::1 at 2021-01-27 13:36:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/login.html"):
+  
+Started POST "/trainers" for ::1 at 2021-01-27 13:36:45 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 13:36:45 -0700
+Processing by TrainersController#create as HTML
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>"Jack", "gender"=>"boy"}
+  Parameters: {"name"=>"Jack", "gender"=>"boy"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jack"], ["gender", "boy"], ["created_at", "2021-01-27 20:36:45.064512"], ["updated_at", "2021-01-27 20:36:45.064512"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jack"], ["gender", "boy"], ["created_at", "2021-01-27 20:36:45.067347"], ["updated_at", "2021-01-27 20:36:45.067347"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 204 No Content in 8ms (ActiveRecord: 1.3ms | Allocations: 3405)
+
+
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 204 No Content in 9ms (ActiveRecord: 1.4ms | Allocations: 3793)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 13:37:21 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 13:37:21 -0700
+Processing by TrainersController#create as HTML
+  Parameters: {"name"=>"jack", "gender"=>"boy"}
+Processing by TrainersController#create as HTML
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  Parameters: {"name"=>"jack", "gender"=>"boy"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.8ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jack"], ["gender", "boy"], ["created_at", "2021-01-27 20:37:21.195027"], ["updated_at", "2021-01-27 20:37:21.195027"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 204 No Content in 5146ms (ActiveRecord: 2.6ms | Allocations: 3306)
+
+
+  [1m[36mTrainer Create (5143.7ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jack"], ["gender", "boy"], ["created_at", "2021-01-27 20:37:21.197007"], ["updated_at", "2021-01-27 20:37:21.197007"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 5146ms (ActiveRecord: 5143.8ms | Allocations: 3712)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/trainers_controller.rb:10:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 14:46:15 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrainersController#create as */*
+  Parameters: {"trainer"=>{"name"=>"Oak", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (1.0ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:46:15.267378"], ["updated_at", "2021-01-27 21:46:15.267378"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 8131)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:46:28 -0700
+Processing by TrainersController#create as */*
+  Parameters: {"trainer"=>{"name"=>"Jack", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:46:28.641353"], ["updated_at", "2021-01-27 21:46:28.641353"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 1943)
+
+
+Started GET "/" for ::1 at 2021-01-27 14:47:17 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jphubert/.rvm/gems/ruby-2.6.5/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jphubert/.rvm/gems/ruby-2.6.5/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.3ms | Allocations: 309)
+Completed 200 OK in 54ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 3064)
+
+
+Started GET "/trainers" for ::1 at 2021-01-27 14:47:25 -0700
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  ↳ app/controllers/trainers_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 3265)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:48:40 -0700
+Processing by TrainersController#create as */*
+  Parameters: {"trainer"=>{"name"=>"jack", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:48:40.610520"], ["updated_at", "2021-01-27 21:48:40.610520"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1760)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:51:04 -0700
+Processing by TrainersController#create as */*
+  Parameters: {"trainer"=>{"name"=>"Orange", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:51:04.849877"], ["updated_at", "2021-01-27 21:51:04.849877"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1778)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:51:40 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.9ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:51:40.723639"], ["updated_at", "2021-01-27 21:51:40.723639"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 1786)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:51:40 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:51:40.729697"], ["updated_at", "2021-01-27 21:51:40.729697"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 1773)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:51:53 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"", "gender"=>nil}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:51:53.360500"], ["updated_at", "2021-01-27 21:51:53.360500"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 14:51:53 -0700
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"", "gender"=>nil}}
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 2485)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:51:53.372189"], ["updated_at", "2021-01-27 21:51:53.372189"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2645)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:52:33 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:52:33.727912"], ["updated_at", "2021-01-27 21:52:33.727912"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1758)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:52:33 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:52:33.733651"], ["updated_at", "2021-01-27 21:52:33.733651"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 1758)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:53:40 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:53:40.162395"], ["updated_at", "2021-01-27 21:53:40.162395"]]
+Started POST "/trainers" for ::1 at 2021-01-27 14:53:40 -0700
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2072)
+
+
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-01-27 21:53:40.167513"], ["updated_at", "2021-01-27 21:53:40.167513"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1796)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:55:38 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 14:55:38 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 79570ms (ActiveRecord: 0.7ms | Allocations: 122606)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/trainers_controller.rb:12:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 14:56:59 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 14:56:59 -0700
+Processing by TrainersController#create as JSON
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+Processing by TrainersController#create as JSON
+Processing by TrainersController#create as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"name"=>"Tyler", "gender"=>"boy", "trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  Parameters: {"name"=>"Tyler", "gender"=>"boy", "trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 28992ms (ActiveRecord: 11.0ms | Allocations: 513733)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/trainers_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 31057ms (ActiveRecord: 3.5ms | Allocations: 843138)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/trainers_controller.rb:12:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 34686ms (ActiveRecord: 4.2ms | Allocations: 9643825)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/trainers_controller.rb:12:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 14:57:42 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 14:57:44 -0700
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrainersController#create as JSON
+  Parameters: {"name"=>"Tyler", "gender"=>"boy", "trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (1.1ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tyler"], ["gender", "boy"], ["created_at", "2021-01-27 21:57:44.356158"], ["updated_at", "2021-01-27 21:57:44.356158"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 114ms (Views: 6.3ms | ActiveRecord: 11.5ms | Allocations: 1385030)
+
+
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TrainersController#create as JSON
+  Parameters: {"name"=>"Tyler", "gender"=>"boy", "trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (1.5ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tyler"], ["gender", "boy"], ["created_at", "2021-01-27 21:57:45.976126"], ["updated_at", "2021-01-27 21:57:45.976126"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 163ms (Views: 5.5ms | ActiveRecord: 21.1ms | Allocations: 1507843)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:58:06 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 14:58:06 -0700
+Processing by TrainersController#create as JSON
+Processing by TrainersController#create as JSON
+  Parameters: {"name"=>"Tyler", "gender"=>"boy", "trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  Parameters: {"name"=>"Tyler", "gender"=>"boy", "trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (1.1ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tyler"], ["gender", "boy"], ["created_at", "2021-01-27 21:58:06.273422"], ["updated_at", "2021-01-27 21:58:06.273422"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (3.6ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tyler"], ["gender", "boy"], ["created_at", "2021-01-27 21:58:06.321251"], ["updated_at", "2021-01-27 21:58:06.321251"]]
+Completed 200 OK in 113ms (Views: 7.4ms | ActiveRecord: 3.1ms | Allocations: 1325548)
+
+
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 134ms (Views: 7.5ms | ActiveRecord: 11.5ms | Allocations: 1561752)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 14:59:49 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 14:59:49 -0700
+Processing by TrainersController#create as JSON
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+  Parameters: {"trainer"=>{"name"=>"Tyler", "gender"=>"boy"}}
+Started POST "/trainers" for ::1 at 2021-01-27 14:59:51 -0700
+Completed 500 Internal Server Error in 1936ms (Allocations: 22969750)
+
+
+Completed 500 Internal Server Error in 1902ms (Allocations: 22446833)
+
+
+  
+NameError (undefined local variable or method `trainer_params' for #<TrainersController:0x007fba17be6760>
+Did you mean?  trainer_path):
+  
+app/controllers/trainers_controller.rb:10:in `create'
+  
+NameError (undefined local variable or method `trainer_params' for #<TrainersController:0x007fba173deb08>
+Did you mean?  trainer_path):
+  
+app/controllers/trainers_controller.rb:10:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 14:59:55 -0700
+Processing by TrainersController#create as JSON
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"", "gender"=>nil}}
+  Parameters: {"trainer"=>{"name"=>"", "gender"=>nil}}
+Completed 500 Internal Server Error in 1738ms (Allocations: 22583102)
+
+
+Completed 500 Internal Server Error in 1730ms (Allocations: 22587396)
+
+
+  
+NameError (undefined local variable or method `trainer_params' for #<TrainersController:0x007fba17b04fb8>
+Did you mean?  trainer_path):
+  
+app/controllers/trainers_controller.rb:10:in `create'
+  
+NameError (undefined local variable or method `trainer_params' for #<TrainersController:0x007fba181e4d38>
+Did you mean?  trainer_path):
+  
+app/controllers/trainers_controller.rb:10:in `create'
+Started POST "/trainers" for ::1 at 2021-01-27 15:02:09 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 15:02:09 -0700
+Processing by TrainersController#create as JSON
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Kara", "gender"=>"girl"}}
+  Parameters: {"trainer"=>{"name"=>"Kara", "gender"=>"girl"}}
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrainer Create (3.7ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kara"], ["gender", "girl"], ["created_at", "2021-01-27 22:02:12.071603"], ["updated_at", "2021-01-27 22:02:12.071603"]]
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Create (2.0ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kara"], ["gender", "girl"], ["created_at", "2021-01-27 22:02:12.126216"], ["updated_at", "2021-01-27 22:02:12.126216"]]
+Completed 200 OK in 210ms (Views: 5.4ms | ActiveRecord: 21.3ms | Allocations: 2533216)
+
+
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `create'
+Completed 200 OK in 237ms (Views: 5.6ms | ActiveRecord: 8.8ms | Allocations: 2859128)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 15:03:48 -0700
+Started POST "/trainers" for ::1 at 2021-01-27 15:03:48 -0700
+Processing by TrainersController#create as JSON
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Kara", "gender"=>"girl"}}
+  Parameters: {"trainer"=>{"name"=>"Kara", "gender"=>"girl"}}
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrainer Create (1.1ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kara"], ["gender", "girl"], ["created_at", "2021-01-27 22:03:51.124522"], ["updated_at", "2021-01-27 22:03:51.124522"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (22.6ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kara"], ["gender", "girl"], ["created_at", "2021-01-27 22:03:51.180983"], ["updated_at", "2021-01-27 22:03:51.180983"]]
+Completed 200 OK in 308ms (Views: 36.9ms | ActiveRecord: 13.3ms | Allocations: 2551945)
+
+
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 372ms (Views: 5.4ms | ActiveRecord: 25.7ms | Allocations: 3139510)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 15:03:57 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Kara", "gender"=>"girl"}}
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (1.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kara"], ["gender", "girl"], ["created_at", "2021-01-27 22:03:57.721884"], ["updated_at", "2021-01-27 22:03:57.721884"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 68ms (Views: 4.2ms | ActiveRecord: 5.3ms | Allocations: 786924)
+
+
