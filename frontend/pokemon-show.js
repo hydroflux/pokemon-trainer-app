@@ -1,8 +1,17 @@
-// const $pokemon = document.querySelector(".card")
+const queryParams = new URLSearchParams(window.location.search)
+const trainerID = queryParams.get("trainer_id")
+fetch(`http://localhost:3000/trainers/${trainerID}`)
+    .then( response => response.json() )
+    .then( trainer => {
+        const trainerHeader = document.querySelector("h1")
+        const myTeamLink = document.getElementById("my-team-link")
 
-const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=150`
+        trainerHeader.textContent = `${trainer.name}, choose Your Pokemon!`
+        myTeamLink.href = `trainer.html?trainer_id=${trainer.id}`
+    })
 
 
+const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=988`
 fetch(pokemonURL)
     .then( response => response.json() )
     .then( pokemons => {
@@ -13,7 +22,8 @@ fetch(pokemonURL)
         pokeRow.classList = "row"
 
         pokemons.results.forEach( pokemon => {
-            console.log(pokemon)
+            const pokeName = capitalize(pokemon.name)
+
             const pokeColumn = document.createElement("div")
             const pokeCard = document.createElement("div")
             const spriteImage = document.createElement("img")
@@ -33,32 +43,41 @@ fetch(pokemonURL)
             fetch(pokemon.url)
                 .then( response => response.json() )
                 .then( pokemonInfo => {
-                    console.log(pokemonInfo.types[0])
-                    spriteImage.src = pokemonInfo.sprites.front_default
-                    // pokeName.textContent = capitalize(pokemonInfo.forms[0].name)
-                    cardText.textContent = capitalize(pokemonInfo.types[0].type.name)
+                    let pokeType = capitalize(pokemonInfo.types[0].type.name)
+                    let pokeSprite = pokemonInfo.sprites.front_default
+
+                    spriteImage.src = pokeSprite
+                    cardText.textContent = pokeType                    
             })
         
+            cardTitle.textContent = pokeName
             addPokemon.textContent = "Add Pokemon"
-
-            // Make Dynamic
-            const trainerID = 17
 
             addPokemon.addEventListener('click', event => {
                 event.preventDefault();
 
-                fetch("http://localhost:3000/pokemon_trainers", {
-                    method: "POST",
-                    headers: {
-                        'Content-type': 'application/json',
-                        'Accept': 'application/json'
-                },
-                    body: JSON.stringify({ pokemon_trainer: { trainer_id: trainerID, pokemon_id: pokemon.id}})
-                })
+                fetch(pokemon.url)
                     .then( response => response.json() )
-                    .then( pokemonTrainer => {
-                        addPokemon.textContent = `${capitalize(pokemon.name)} Added!`
-                    })
+                    .then( pokemonInfo => {
+                        // console.log(pokemonInfo)
+                        // console.log(pokemonInfo.types[0])
+                        const pokeType = capitalize(pokemonInfo.types[0].type.name)
+                        const pokeSprite = pokemonInfo.sprites.front_default
+                        const pokemonID = pokemonInfo.id
+
+                        fetch("http://localhost:3000/pokemon_trainers", {
+                            method: "POST",
+                            headers: {
+                                'Content-type': 'application/json',
+                                'Accept': 'application/json'
+                        },
+                            body: JSON.stringify({ pokemon_trainer: { trainer_id: trainerID, pokemon_id: pokemonID, name: pokeName, pokeType: pokeType, image: pokeSprite }})
+                        })
+                            .then( response => response.json() )
+                            .then( pokemonTrainer => {
+                                addPokemon.textContent = `${capitalize(pokemon.name)} Added!`
+                            })
+                })
             })
             
             cardBody.append(cardTitle, cardText, addPokemon)

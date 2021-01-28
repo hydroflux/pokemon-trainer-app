@@ -12,15 +12,29 @@
     <title>Pokemons</title>
   </head>
   <body>
-       <h1>See All Your Favorite Pokemons</h1>
-      <div class="bg-video">
-      <video class="bg-video__content" autoplay muted loop>
-          <source src="/image/Bird.mp4" type="video/mp4">
-          Your browser does not support video
-      </video>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand">Build Your Pokemon Team</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link disabled">Pokedex</a>
+          </li>
+          <li class="nav-item">
+            <a id="my-team-link" class="nav-link" href="#">My Team</a>
+          </li>
+        </ul>
       </div>
-
-    </div>  
+    </nav>
+      <h1></h1>
+       <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="/image/Bird.mp4" type="video/mp4">
+            Your browser does not support video
+        </video>
+        </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -1,8 +1,6 @@
 const addTrainerForm = document.getElementById("add-trainer");
 const addTrainerButton = document.getElementById("add-trainer-submit");
 
-console.log(addTrainerForm.name.textContent)
-
 addTrainerForm.addEventListener('submit', event => {
   event.preventDefault();
   
@@ -21,7 +19,7 @@ addTrainerForm.addEventListener('submit', event => {
     .then( response => response.json() )
     .then( trainer => 
             // document.location.href = `http://localhost:3001/trainer.html?id=${trainer.id}`
-            document.location.href = `http://localhost:3001/pokemon.html`
+            document.location.href = `http://localhost:3001/pokemon.html?trainer_id=${trainer.id}`
         )
 
 
