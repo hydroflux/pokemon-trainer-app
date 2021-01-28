@@ -11,7 +11,9 @@ fetch(`http://localhost:3000/trainers/${trainerID}`)
     })
 
 
-const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=988`
+// const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=988`
+const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=150`
+
 fetch(pokemonURL)
     .then( response => response.json() )
     .then( pokemons => {
@@ -25,29 +27,63 @@ fetch(pokemonURL)
             const pokeName = capitalize(pokemon.name)
 
             const pokeColumn = document.createElement("div")
-            const pokeCard = document.createElement("div")
-            const spriteImage = document.createElement("img")
+            const flipCard = document.createElement("div")
+            const flipCardInner = document.createElement("div")
+            const pokeCardFront = document.createElement("div")
+            const spriteImageFront = document.createElement("img")
+            const pokeMoves = document.createElement("ul")
+            const pokeCardBack = document.createElement("div")
+            const spriteImageBack = document.createElement("img")
             const cardBody = document.createElement("div")
             const cardTitle = document.createElement("h5")
             const cardText = document.createElement("p")
+            const pokeDescription = document.createElement("p")
             const addPokemon = document.createElement("a")
 
             pokeColumn.classList = "col mx-1"
-            pokeCard.classList = "card"
+            flipCard.classList = "flip-card"
+            flipCardInner.classList = "flip-card-inner"
+            pokeCardFront.classList = "card flip-card-front"
+            pokeCardBack.classList = "card flip-card-back"
+            pokeMoves.classList = "card-body"
             cardBody.classList = "card-body"
+            pokeDescription.classList = ("card-body")
             cardTitle.classList = "card-title"
             addPokemon.classList = "btn btn-primary"
             
-            pokeCard.setAttribute("style", "width: 18rem;")
+            pokeCardFront.setAttribute("style", "width: 18rem;")
+            pokeCardBack.setAttribute("style", "width: 18rem;")
 
             fetch(pokemon.url)
                 .then( response => response.json() )
                 .then( pokemonInfo => {
                     let pokeType = capitalize(pokemonInfo.types[0].type.name)
-                    let pokeSprite = pokemonInfo.sprites.front_default
+                    let pokeSpriteFront = pokemonInfo.sprites.front_default
+                    let pokeSpriteBack = pokemonInfo.sprites.back_default
 
-                    spriteImage.src = pokeSprite
+                    console.log(pokemonInfo)
+
+                    pokeMoves.textContent = `${pokeName}'s Moves:`
+                    const fourRandomMoves = getRandomSubarray(pokemonInfo.moves, 4);
+                    fourRandomMoves.forEach( move => {
+                        li = document.createElement("li")
+                        
+                        li.textContent = capitalize(move.move.name)
+
+                        pokeMoves.appendChild(li)
+                    })
+
+                    spriteImageFront.src = pokeSpriteFront
+                    spriteImageBack.src = pokeSpriteBack
                     cardText.textContent = pokeType                    
+
+
+                fetch(pokemonInfo.species.url)
+                    .then( response => response.json() )
+                    .then( pokemonSpecies => {
+                        console.log(pokemonSpecies.flavor_text_entries[0])
+                        pokeDescription.textContent = pokemonSpecies.flavor_text_entries[0].flavor_text
+                    })
             })
         
             cardTitle.textContent = pokeName
@@ -59,8 +95,6 @@ fetch(pokemonURL)
                 fetch(pokemon.url)
                     .then( response => response.json() )
                     .then( pokemonInfo => {
-                        // console.log(pokemonInfo)
-                        // console.log(pokemonInfo.types[0])
                         const pokeType = capitalize(pokemonInfo.types[0].type.name)
                         const pokeSprite = pokemonInfo.sprites.front_default
                         const pokemonID = pokemonInfo.id
@@ -81,8 +115,11 @@ fetch(pokemonURL)
             })
             
             cardBody.append(cardTitle, cardText, addPokemon)
-            pokeCard.append(spriteImage, cardBody)
-            pokeColumn.appendChild(pokeCard)
+            pokeCardFront.append(spriteImageFront, cardBody)
+            pokeCardBack.append(spriteImageBack, pokeDescription, addPokemon)
+            flipCardInner.append(pokeCardFront, pokeCardBack)
+            flipCard.append(flipCardInner)
+            pokeColumn.appendChild(flipCard)
             pokeRow.appendChild(pokeColumn)
         })
 
@@ -94,3 +131,14 @@ const capitalize = (s) => {
     if (typeof s !== 'string') return ''
     return s.charAt(0).toUpperCase() + s.slice(1)
     }
+
+function getRandomSubarray(array, size) {
+    let shuffled = array.slice(0), i = array.length, temp, index;
+    while (i--) {
+        index = Math.floor((i + 1) * Math.random());
+        temp = shuffled[index];
+        shuffled[index] = shuffled[i];
+        shuffled[i] = temp;
+    }
+    return shuffled.slice(0, size);
+}
