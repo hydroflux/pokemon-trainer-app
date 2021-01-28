@@ -1588,3 +1588,1681 @@ Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 632)
 >>>>>>> master
 
 
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIJQJ" for ::1 at 2021-01-28 11:37:28 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIKsT" for ::1 at 2021-01-28 11:37:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started POST "/trainers" for ::1 at 2021-01-28 11:37:36 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Obinna", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (0.7ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Obinna"], ["gender", "boy"], ["created_at", "2021-01-28 18:37:36.214502"], ["updated_at", "2021-01-28 18:37:36.214502"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 7397)
+
+
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIMkh" for ::1 at 2021-01-28 11:37:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIOIi" for ::1 at 2021-01-28 11:37:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIQBE" for ::1 at 2021-01-28 11:37:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIRo5" for ::1 at 2021-01-28 11:38:02 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIT9i" for ::1 at 2021-01-28 11:38:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIV2e" for ::1 at 2021-01-28 11:38:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIWi3" for ::1 at 2021-01-28 11:38:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIYRR" for ::1 at 2021-01-28 11:38:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIa7p" for ::1 at 2021-01-28 11:38:36 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIbrf" for ::1 at 2021-01-28 11:38:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIdPt" for ::1 at 2021-01-28 11:38:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIfKf" for ::1 at 2021-01-28 11:38:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIgwy" for ::1 at 2021-01-28 11:39:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIii9" for ::1 at 2021-01-28 11:39:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIkOi" for ::1 at 2021-01-28 11:39:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIm3-" for ::1 at 2021-01-28 11:39:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAInpz" for ::1 at 2021-01-28 11:39:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIpVx" for ::1 at 2021-01-28 11:39:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIrE8" for ::1 at 2021-01-28 11:39:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIsx5" for ::1 at 2021-01-28 11:39:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIueg" for ::1 at 2021-01-28 11:40:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIwLr" for ::1 at 2021-01-28 11:40:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIy3Q" for ::1 at 2021-01-28 11:40:14 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAIzhr" for ::1 at 2021-01-28 11:40:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAI_5X" for ::1 at 2021-01-28 11:40:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJ0ZG" for ::1 at 2021-01-28 11:40:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJ27B" for ::1 at 2021-01-28 11:40:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started POST "/trainers" for ::1 at 2021-01-28 11:40:44 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Kara", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kara"], ["gender", "boy"], ["created_at", "2021-01-28 18:40:44.646899"], ["updated_at", "2021-01-28 18:40:44.646899"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 1851)
+
+
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJ3Uu" for ::1 at 2021-01-28 11:40:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJ5Mj" for ::1 at 2021-01-28 11:40:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJ71Z" for ::1 at 2021-01-28 11:40:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJ8eL" for ::1 at 2021-01-28 11:41:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJAL3" for ::1 at 2021-01-28 11:41:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJCEh" for ::1 at 2021-01-28 11:41:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJDgF" for ::1 at 2021-01-28 11:41:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJFKk" for ::1 at 2021-01-28 11:41:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJGgV" for ::1 at 2021-01-28 11:41:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJI8F" for ::1 at 2021-01-28 11:41:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJJb_" for ::1 at 2021-01-28 11:41:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJLWn" for ::1 at 2021-01-28 11:41:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJN7Z" for ::1 at 2021-01-28 11:42:05 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJOwF" for ::1 at 2021-01-28 11:42:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJQBz" for ::1 at 2021-01-28 11:42:18 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJRfc" for ::1 at 2021-01-28 11:42:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJT7M" for ::1 at 2021-01-28 11:42:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJUb5" for ::1 at 2021-01-28 11:42:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/browser-sync/socket.io/?EIO=3&transport=polling&t=NTAJWLP" for ::1 at 2021-01-28 11:42:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/browser-sync/socket.io"):
+  
+Started GET "/pokemons" for ::1 at 2021-01-28 11:44:35 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 1.1ms | Allocations: 6152)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:44:35 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1551)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:45:08 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1535)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:45:08 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:45:22 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1551)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:45:22 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:46:48 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1536)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:46:48 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:47:22 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1535)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:47:22 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:48:23 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:48:23 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:49:09 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:49:09 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:49:11 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:49:11 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:49:20 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:49:20 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:50:14 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:50:14 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:51:16 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:51:16 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:54:33 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:54:33 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:58:36 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:58:36 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:59:12 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:59:12 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:59:17 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 11:59:17 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:01:02 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:01:02 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:01:32 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:01:32 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:03:30 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:03:30 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:03:31 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 1535)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:03:31 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:03:39 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:03:39 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:04:08 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:04:08 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:04:31 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:04:31 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:04:43 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:04:43 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:04:58 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:04:58 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:05:09 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:05:09 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:05:25 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:05:25 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:05:39 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:05:39 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:06:48 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:06:48 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:08:23 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:08:23 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:09:28 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 1543)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:09:28 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:11:01 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:11:01 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemon_trainers" for ::1 at 2021-01-28 12:11:08 -0700
+Processing by PokemonTrainersController#index as HTML
+  [1m[36mPokemonTrainer Load (0.3ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.7ms | Allocations: 4999)
+
+
+Started GET "/pokemon_trainers" for ::1 at 2021-01-28 12:11:30 -0700
+Processing by PokemonTrainersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.0ms | Allocations: 7330)
+
+
+  
+NoMethodError (undefined method `pokemons' for #<PokemonTrainer:0x00007f90792a08a8>
+Did you mean?  pokemon
+               pokemon=):
+  
+app/controllers/pokemon_trainers_controller.rb:6:in `index'
+Started GET "/pokemon_trainers" for ::1 at 2021-01-28 12:11:38 -0700
+Processing by PokemonTrainersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:6:in `index'
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 1.7ms | Allocations: 17648)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:13:59 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1566)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:13:59 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:15:02 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:15:02 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:15:11 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:15:11 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:15:56 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:15:56 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:16:18 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:16:18 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:16:27 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:16:27 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1535)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:09 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:09 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:18 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:18 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:28 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:28 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:49 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:49 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:51 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:51 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:54 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:18:54 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started POST "/pokemonTrainers" for ::1 at 2021-01-28 12:18:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/pokemonTrainers"):
+  
+Started POST "/pokemonTrainers" for ::1 at 2021-01-28 12:18:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/pokemonTrainers"):
+  
+Started POST "/pokemonTrainers" for ::1 at 2021-01-28 12:21:53 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/pokemonTrainers"):
+  
+Started POST "/pokemonTrainers" for ::1 at 2021-01-28 12:21:53 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/pokemonTrainers"):
+  
+Started POST "/pokemonTrainers" for ::1 at 2021-01-28 12:22:11 -0700
+Started POST "/pokemonTrainers" for ::1 at 2021-01-28 12:22:11 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/pokemonTrainers"):
+  
+  
+ActionController::RoutingError (No route matches [POST] "/pokemonTrainers"):
+  
+Started GET "/pokemons" for ::1 at 2021-01-28 12:22:43 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 25ms (Views: 8.8ms | ActiveRecord: 0.8ms | Allocations: 9462)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:22:43 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1534)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:22:46 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:22:46 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 646)
+
+
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  
+ActiveRecord::RecordNotFound (Couldn't find PokemonTrainer without an ID):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 136)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find PokemonTrainer without an ID):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:25:01 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:25:01 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+Completed 500 Internal Server Error in 42173ms (Allocations: 102579)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 42206ms (Allocations: 353137)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:14:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:25:47 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:25:47 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Load (4.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (2.0ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTrainer Load (0.8ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemonTrainer Create (1.9ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-28 19:25:51.018334"], ["updated_at", "2021-01-28 19:25:51.018334"]]
+  [1m[36mPokemonTrainer Create (3.6ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-28 19:25:51.040939"], ["updated_at", "2021-01-28 19:25:51.040939"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (5160.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 5824ms (ActiveRecord: 12.1ms | Allocations: 6038548)
+
+
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mrollback transaction[0m
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 6187ms (ActiveRecord: 5201.0ms | Allocations: 9726442)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:26:13 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:26:13 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (0.9ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemonTrainer Create (22.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-28 19:26:17.054134"], ["updated_at", "2021-01-28 19:26:17.054134"]]
+  [1m[36mPokemon Load (3.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (1.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (5206.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemonTrainer Create (1.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-28 19:26:22.325767"], ["updated_at", "2021-01-28 19:26:22.325767"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 5872ms (ActiveRecord: 5263.9ms | Allocations: 6772142)
+
+
+Completed 500 Internal Server Error in 5873ms (ActiveRecord: 8.6ms | Allocations: 6736007)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:26:52 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:26:52 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+Completed 500 Internal Server Error in 8ms (Allocations: 63204)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 18ms (Allocations: 178265)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:11:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:27:05 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:27:05 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+Completed 500 Internal Server Error in 10ms (Allocations: 59583)
+
+
+Completed 500 Internal Server Error in 6ms (Allocations: 61780)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:11:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:27:17 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:27:17 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+Completed 500 Internal Server Error in 99135ms (ActiveRecord: 0.0ms | Allocations: 58306)
+
+
+Completed 500 Internal Server Error in 99131ms (ActiveRecord: 0.0ms | Allocations: 69067)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:11:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:28:59 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:28:59 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (1.0ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTrainer Load (1.8ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 29712ms (ActiveRecord: 27.2ms | Allocations: 3938772)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 29704ms (ActiveRecord: 8.5ms | Allocations: 3840135)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/pokemon_trainers_controller.rb:13:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:29:35 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:29:35 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+Started GET "/pokemons" for ::1 at 2021-01-28 12:29:39 -0700
+  [1m[36mPokemon Load (5.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (1.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPokemon Load (1.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Load (1.4ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mPokemonTrainer Create (4.7ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-28 19:29:39.567301"], ["updated_at", "2021-01-28 19:29:39.567301"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemonTrainer Create (4.0ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-28 19:29:39.650714"], ["updated_at", "2021-01-28 19:29:39.650714"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 850ms (Views: 7.1ms | ActiveRecord: 45.1ms | Allocations: 7225845)
+
+
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 789ms (Views: 6.1ms | ActiveRecord: 82.6ms | Allocations: 6704903)
+
+
+Processing by PokemonsController#index as */*
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+  [1m[36mPokemon Load (6.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 269ms (Views: 224.8ms | ActiveRecord: 21.2ms | Allocations: 2735163)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:29:44 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:29:44 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>17}}
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (1.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (1.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (1.6ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-28 19:29:45.224377"], ["updated_at", "2021-01-28 19:29:45.224377"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (5189.6ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 17], ["trainer_id", 8], ["created_at", "2021-01-28 19:29:45.270513"], ["updated_at", "2021-01-28 19:29:45.270513"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 5705ms (Views: 8.5ms | ActiveRecord: 23.8ms | Allocations: 5515418)
+
+
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 5729ms (ActiveRecord: 5197.9ms | Allocations: 5742124)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:29:52 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:29:52 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>20}}
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mTrainer Load (1.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>20}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mPokemon Load (2.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTrainer Load (1.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPokemonTrainer Create (1.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 20], ["trainer_id", 8], ["created_at", "2021-01-28 19:29:53.045780"], ["updated_at", "2021-01-28 19:29:53.045780"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (1.6ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 20], ["trainer_id", 8], ["created_at", "2021-01-28 19:29:53.133556"], ["updated_at", "2021-01-28 19:29:53.133556"]]
+Completed 200 OK in 272ms (Views: 8.1ms | ActiveRecord: 9.3ms | Allocations: 2658891)
+
+
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 259ms (Views: 6.5ms | ActiveRecord: 10.4ms | Allocations: 2569707)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:31:33 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 104ms (Views: 95.0ms | ActiveRecord: 1.8ms | Allocations: 884967)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:31:33 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 303ms (Views: 294.9ms | ActiveRecord: 1.4ms | Allocations: 880308)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:31:37 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:31:37 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>16}}
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>16}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (3.7ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTrainer Load (0.9ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (1.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 16], ["trainer_id", 8], ["created_at", "2021-01-28 19:31:37.566549"], ["updated_at", "2021-01-28 19:31:37.566549"]]
+  [1m[36mPokemonTrainer Create (5160.8ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 16], ["trainer_id", 8], ["created_at", "2021-01-28 19:31:37.599184"], ["updated_at", "2021-01-28 19:31:37.599184"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 5435ms (Views: 6.2ms | ActiveRecord: 10.2ms | Allocations: 2944914)
+
+
+Completed 500 Internal Server Error in 5423ms (ActiveRecord: 5163.9ms | Allocations: 2774255)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Started GET "/pokemons" for ::1 at 2021-01-28 12:31:45 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 100ms (Views: 95.9ms | ActiveRecord: 1.3ms | Allocations: 1002320)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:31:48 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:31:48 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>19}}
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>19}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (1.8ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mTrainer Load (0.9ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTrainer Load (0.9ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (1.2ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 19], ["trainer_id", 8], ["created_at", "2021-01-28 19:31:48.416651"], ["updated_at", "2021-01-28 19:31:48.416651"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemonTrainer Create (1.2ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 19], ["trainer_id", 8], ["created_at", "2021-01-28 19:31:48.472725"], ["updated_at", "2021-01-28 19:31:48.472725"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 235ms (Views: 7.2ms | ActiveRecord: 8.1ms | Allocations: 2339834)
+
+
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 283ms (Views: 7.0ms | ActiveRecord: 6.0ms | Allocations: 2810549)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:31:54 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:31:54 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>18}}
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mTrainer Load (3.8ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>18}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTrainer Load (0.9ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPokemonTrainer Create (46.6ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 18], ["trainer_id", 8], ["created_at", "2021-01-28 19:31:54.512319"], ["updated_at", "2021-01-28 19:31:54.512319"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (1.5ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 18], ["trainer_id", 8], ["created_at", "2021-01-28 19:31:54.637782"], ["updated_at", "2021-01-28 19:31:54.637782"]]
+Completed 200 OK in 319ms (Views: 6.5ms | ActiveRecord: 54.0ms | Allocations: 2618345)
+
+
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 296ms (Views: 7.0ms | ActiveRecord: 5.7ms | Allocations: 2656542)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:31:56 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:31:56 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>21}}
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>8, "pokemon_id"=>21}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (3.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mTrainer Load (1.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTrainer Load (1.0ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (1.2ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 21], ["trainer_id", 8], ["created_at", "2021-01-28 19:31:56.524357"], ["updated_at", "2021-01-28 19:31:56.524357"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (5193.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 21], ["trainer_id", 8], ["created_at", "2021-01-28 19:31:56.570467"], ["updated_at", "2021-01-28 19:31:56.570467"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 5443ms (Views: 7.3ms | ActiveRecord: 5.4ms | Allocations: 2766967)
+
+
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 5464ms (ActiveRecord: 5199.2ms | Allocations: 2967567)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Started GET "/pokemons" for ::1 at 2021-01-28 12:35:27 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 93ms (Views: 86.3ms | ActiveRecord: 1.1ms | Allocations: 880307)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:35:28 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (10.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 203ms (Views: 190.7ms | ActiveRecord: 10.0ms | Allocations: 880308)
+
+
+Started POST "/trainers" for ::1 at 2021-01-28 12:37:15 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Reed", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (3.8ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Reed"], ["gender", "boy"], ["created_at", "2021-01-28 19:37:15.903467"], ["updated_at", "2021-01-28 19:37:15.903467"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 80ms (Views: 6.7ms | ActiveRecord: 5.7ms | Allocations: 936392)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:37:16 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 95ms (Views: 84.3ms | ActiveRecord: 1.4ms | Allocations: 880308)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:37:33 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (5.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 92ms (Views: 83.6ms | ActiveRecord: 5.1ms | Allocations: 880308)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:37:34 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (3.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 176ms (Views: 150.5ms | ActiveRecord: 3.9ms | Allocations: 880308)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:37:43 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 108ms (Views: 100.3ms | ActiveRecord: 1.1ms | Allocations: 883168)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:37:44 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 154ms (Views: 145.6ms | ActiveRecord: 1.9ms | Allocations: 880308)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:37:50 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:37:50 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17, "pokemon_id"=>15}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17, "pokemon_id"=>15}}
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (5.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mTrainer Load (1.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (1.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 15], ["trainer_id", 17], ["created_at", "2021-01-28 19:37:50.545782"], ["updated_at", "2021-01-28 19:37:50.545782"]]
+  [1m[36mPokemonTrainer Create (5188.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 15], ["trainer_id", 17], ["created_at", "2021-01-28 19:37:50.576633"], ["updated_at", "2021-01-28 19:37:50.576633"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 5479ms (Views: 10.4ms | ActiveRecord: 9.6ms | Allocations: 2934529)
+
+
+Completed 500 Internal Server Error in 5482ms (ActiveRecord: 5192.3ms | Allocations: 2984273)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:38:01 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:38:01 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17, "pokemon_id"=>16}}
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mPokemon Load (3.6ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17, "pokemon_id"=>16}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mTrainer Load (3.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTrainer Load (4.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (3.6ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 16], ["trainer_id", 17], ["created_at", "2021-01-28 19:38:01.426924"], ["updated_at", "2021-01-28 19:38:01.426924"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (5149.9ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 16], ["trainer_id", 17], ["created_at", "2021-01-28 19:38:01.476706"], ["updated_at", "2021-01-28 19:38:01.476706"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 5466ms (Views: 6.0ms | ActiveRecord: 15.2ms | Allocations: 3073271)
+
+
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 5475ms (ActiveRecord: 5156.1ms | Allocations: 3194527)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:38:26 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:38:26 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17, "pokemon_id"=>20}}
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mTrainer Load (1.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17, "pokemon_id"=>20}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mPokemon Load (3.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTrainer Load (1.8ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mPokemonTrainer Create (1.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 20], ["trainer_id", 17], ["created_at", "2021-01-28 19:38:26.263789"], ["updated_at", "2021-01-28 19:38:26.263789"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (1.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 20], ["trainer_id", 17], ["created_at", "2021-01-28 19:38:26.347416"], ["updated_at", "2021-01-28 19:38:26.347416"]]
+Completed 200 OK in 241ms (Views: 7.5ms | ActiveRecord: 5.3ms | Allocations: 2421537)
+
+
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 234ms (Views: 12.0ms | ActiveRecord: 8.8ms | Allocations: 2363038)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:38:30 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:38:30 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17, "pokemon_id"=>21}}
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mPokemon Load (1.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17, "pokemon_id"=>21}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (1.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mTrainer Load (1.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTrainer Load (1.0ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (1.2ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 21], ["trainer_id", 17], ["created_at", "2021-01-28 19:38:30.860128"], ["updated_at", "2021-01-28 19:38:30.860128"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mPokemonTrainer Create (5165.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 21], ["trainer_id", 17], ["created_at", "2021-01-28 19:38:30.907432"], ["updated_at", "2021-01-28 19:38:30.907432"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 200 OK in 5436ms (Views: 8.0ms | ActiveRecord: 6.7ms | Allocations: 2765783)
+
+
+  ↳ app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 5450ms (ActiveRecord: 5169.0ms | Allocations: 2882920)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:12:in `create'
+Started GET "/pokemons" for ::1 at 2021-01-28 12:39:50 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (4.0ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 127ms (Views: 112.6ms | ActiveRecord: 4.0ms | Allocations: 880307)
+
+
+Started GET "/pokemons" for ::1 at 2021-01-28 12:39:50 -0700
+Processing by PokemonsController#index as */*
+  [1m[36mPokemon Load (1.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  ↳ app/controllers/pokemons_controller.rb:6:in `index'
+Completed 200 OK in 197ms (Views: 170.0ms | ActiveRecord: 1.4ms | Allocations: 880308)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:42:37 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:42:37 -0700
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17}}
+Completed 404 Not Found in 12ms (ActiveRecord: 0.0ms | Allocations: 73121)
+
+
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms | Allocations: 73117)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pokemon without an ID):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  
+ActiveRecord::RecordNotFound (Couldn't find Pokemon without an ID):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:43:39 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17}}
+Started POST "/pokemon_trainers" for ::1 at 2021-01-28 12:43:39 -0700
+Completed 404 Not Found in 14ms (ActiveRecord: 0.0ms | Allocations: 73117)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pokemon without an ID):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>17}}
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms | Allocations: 73117)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pokemon without an ID):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'

@@ -1,4 +1,4 @@
-const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=150`
+
 
 const queryParams = new URLSearchParams(window.location.search)
 const pokemonId = queryParams.get('id')
@@ -38,8 +38,3 @@ fetch(pokemonURL)
             document.body.appendChild(pokeCard)
         })
     })
-        
-const capitalize = (s) => {
-    if (typeof s !== 'string') return ''
-    return s.charAt(0).toUpperCase() + s.slice(1)
-    }
