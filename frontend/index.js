@@ -20,7 +20,7 @@ addTrainerForm.addEventListener('submit', event => {
   })
     .then( response => response.json() )
     .then( trainer => 
-            document.location.href = `http://localhost:3001/trainers?id=${trainer.id}`
+            document.location.href = `http://localhost:3001/trainer.html?id=${trainer.id}`
         )
 
 
@@ -29,7 +29,7 @@ addTrainerForm.addEventListener('submit', event => {
 })
 
 
-// document.location.href = `http://localhost:3001/trainers?name=${loginForm.name}`
+// document.location.href = `http://localhost:3001/trainer?name=${loginForm.name}`
     // document.location.href = `www.google.com`
 
 // const loginForm = document.getElementById("login-form");

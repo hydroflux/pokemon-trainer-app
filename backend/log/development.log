@@ -1208,3 +1208,153 @@ Processing by TrainersController#create as JSON
 Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 7.1ms | Allocations: 1837)
 
 
+Started GET "/trainers?id=null" for ::1 at 2021-01-27 16:25:22 -0700
+Processing by TrainersController#index as */*
+  Parameters: {"id"=>"null"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:6:in `index'
+  [1m[36mTrainer Load (0.5ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  ↳ app/controllers/trainers_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.9ms | Allocations: 6016)
+
+
+Started GET "/trainers?id=null" for ::1 at 2021-01-27 16:25:38 -0700
+Processing by TrainersController#index as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  ↳ app/controllers/trainers_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5410)
+
+
+Started GET "/trainers?id=8" for ::1 at 2021-01-27 16:25:44 -0700
+Processing by TrainersController#index as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrainer Load (0.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  ↳ app/controllers/trainers_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 5412)
+
+
+Started GET "/trainers/8" for ::1 at 2021-01-27 16:26:08 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 632)
+
+
+Started GET "/trainers/8" for ::1 at 2021-01-27 16:26:18 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 616)
+
+
+Started GET "/trainers/8" for ::1 at 2021-01-27 16:27:56 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 616)
+
+
+Started GET "/trainers/8" for ::1 at 2021-01-27 16:28:55 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 616)
+
+
+Started GET "/trainers/8" for ::1 at 2021-01-27 16:29:09 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 616)
+
+
+Started GET "/trainers/8" for ::1 at 2021-01-27 16:29:20 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 617)
+
+
+Started POST "/trainers" for ::1 at 2021-01-27 16:29:36 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Zach", "gender"=>nil}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (0.8ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Zach"], ["created_at", "2021-01-27 23:29:36.444796"], ["updated_at", "2021-01-27 23:29:36.444796"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 1821)
+
+
+Started GET "/trainers/50" for ::1 at 2021-01-27 16:29:36 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 609)
+
+
+Started GET "/trainers/50" for ::1 at 2021-01-27 16:30:02 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 609)
+
+
+Started GET "/trainers/50" for ::1 at 2021-01-27 16:32:12 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 609)
+
+
+Started GET "/trainers/50" for ::1 at 2021-01-27 16:33:14 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mTrainer Load (0.7ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.7ms | Allocations: 609)
+
+
+Started GET "/trainers/50" for ::1 at 2021-01-27 16:34:24 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 609)
+
+
+Started GET "/trainers/50" for ::1 at 2021-01-27 16:34:33 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 609)
+
+
+Started GET "/trainers/50" for ::1 at 2021-01-27 16:35:12 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 609)
+
+
+Started GET "/trainers/50" for ::1 at 2021-01-27 16:35:20 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mTrainer Load (0.6ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 609)
+
+

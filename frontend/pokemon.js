@@ -1,51 +1,40 @@
+const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=150`
+
 const queryParams = new URLSearchParams(window.location.search)
 const pokemonId = queryParams.get('id')
 
-fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}/`)
+fetch(pokemonURL)
     .then( response => response.json() )
-    .then( pokemon => {
-        const pokeTitle = document.createElement('title')
-        const spriteImage = document.createElement('img')
-        const pokeName = document.createElement('h1')
-        const pokeType = document.createElement('h2')
+    .then( pokemons => {
+        pokemons.results.forEach( pokemon => {
+            console.log(pokemon)
+            const pokeCard = document.createElement('div')
+            const pokeContainer = document.createElement('div')
+            pokeCard.classList = 'poke-card'
+            pokeContainer.classList = 'poke-info'
 
-        spriteImage.src = pokemon.sprites.front_default
-        pokeTitle.textContent = pokemon.forms[0].name
-        pokeName.textContent = capitalize(pokemon.forms[0].name)
-        pokeType.textContent = capitalize(pokemon.types[0].type)
+            const spriteImage = document.createElement('img')
+            const pokeName = document.createElement('h4')
+            const pokeType = document.createElement('a')
 
-        document.head.append(pokeTitle)
-        document.body.append(pokeName, spriteImage, pokeType)
+            fetch(pokemon.url)
+                .then( response => response.json() )
+                .then( pokemonInfo => {
+                    console.log(pokemonInfo.types[0])
+                    spriteImage.src = pokemonInfo.sprites.front_default
+                    pokeName.textContent = capitalize(pokemonInfo.forms[0].name)
+                    pokeType.textContent = capitalize(pokemonInfo.types[0].type.name)
+                    pokeType.href = capitalize(pokemonInfo.types[0].type.url)
+                })
+
+
+            pokeContainer.append(pokeName, pokeType)
+            pokeCard.append(spriteImage, pokeContainer)
+            document.body.appendChild(pokeCard)
+        })
     })
-
+        
 const capitalize = (s) => {
     if (typeof s !== 'string') return ''
     return s.charAt(0).toUpperCase() + s.slice(1)
     }
-
-
-
-//     console.log("JavaScript Started!")
-
-// fetch("https://pokeapi.co/api/v2/pokemon/382/")
-//     .then( response => response.json() )
-//     .then( pokemon => {
-//         console.log(pokemon)
-
-//         p = document.createElement('p')
-//         spriteImage = document.createElement('img')
-
-//         typeName = document.createElement('a')
-
-
-//         spriteImage.src = (pokemon.sprites.front_default)
-//         p.textContent = pokemon.moves[0].move.name
-
-//         pokemon
-
-//         document.body.appendChild(spriteImage)
-//         document.body.appendChild(p)
-//     })
-
-
-
