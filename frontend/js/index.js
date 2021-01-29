@@ -18,7 +18,7 @@ addTrainerForm.addEventListener('submit', event => {
   })
     .then( response => response.json() )
     .then( trainer => 
-            document.location.href = `http://localhost:3001/pokemon.html?trainer_id=${trainer.id}`
+            document.location.href = `http://localhost:3001/html/pokemon.html?trainer_id=${trainer.id}`
         )
 
 

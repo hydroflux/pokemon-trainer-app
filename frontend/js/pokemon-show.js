@@ -2,8 +2,7 @@ const queryParams = new URLSearchParams(window.location.search)
 const trainerID = queryParams.get("trainer_id")
 const typeID = queryParams.get("type_id")
 
-// const showNumberPokemon = 988
-const showNumberPokemon = 500
+const showNumberPokemon = 251 // 988 total options
 let pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=${showNumberPokemon}`
 
 fetch(`http://localhost:3000/trainers/${trainerID}`)
@@ -12,7 +11,7 @@ fetch(`http://localhost:3000/trainers/${trainerID}`)
         const trainerHeader = document.querySelector("h1")
         const myTeamLink = document.getElementById("my-team-link")
 
-        trainerHeader.textContent = `${trainer.name}, choose Your Pokemon!`
+        trainerHeader.textContent = `${trainer.name}, choose your Pokemon!`
         myTeamLink.href = `trainer.html?trainer_id=${trainer.id}`
     })
 
@@ -28,7 +27,7 @@ fetch('https://pokeapi.co/api/v2/type')
         allTypeLink.classList = "nav-link"
         
         allTypeLink.textContent = "All"
-        allTypeLink.href = `http://localhost:3001/pokemon.html?trainer_id=${trainerID}`
+        allTypeLink.href = `http://localhost:3001/html/pokemon.html?trainer_id=${trainerID}`
 
         allTypeListItem.appendChild(allTypeLink)
         pokemonTypeNavList.appendChild(allTypeListItem)
@@ -41,7 +40,7 @@ fetch('https://pokeapi.co/api/v2/type')
             typeLink.classList = "nav-link"
 
             typeLink.textContent = capitalize(pokemonType.name)
-            typeLink.href = `http://localhost:3001/pokemon.html?trainer_id=${trainerID}&type_id=${pokemonType.url.slice(31,-1)}`
+            typeLink.href = `http://localhost:3001/html/pokemon.html?trainer_id=${trainerID}&type_id=${pokemonType.url.slice(31,-1)}`
 
             typeListItem.appendChild(typeLink)
             pokemonTypeNavList.appendChild(typeListItem)
@@ -78,7 +77,6 @@ fetch(pokemonURL)
             const flipCardInner = document.createElement("div")
             const pokeCardFront = document.createElement("div")
             const spriteImageFront = document.createElement("img")
-            // const pokeMoves = document.createElement("ul")
             const pokeCardBack = document.createElement("div")
             const spriteImageBack = document.createElement("img")
             const cardBody = document.createElement("div")
@@ -92,7 +90,6 @@ fetch(pokemonURL)
             flipCardInner.classList = "flip-card-inner"
             pokeCardFront.classList = "card flip-card-front"
             pokeCardBack.classList = "card flip-card-back"
-            // pokeMoves.classList = "card-body"
             cardBody.classList = "card-body"
             pokeDescription.classList = ("card-body")
             cardTitle.classList = "card-title"
@@ -108,22 +105,9 @@ fetch(pokemonURL)
                     let pokeSpriteFront = pokemonInfo.sprites.front_default
                     let pokeSpriteBack = pokemonInfo.sprites.back_default
 
-                    // console.log(pokemonInfo)
-
-                    // pokeMoves.textContent = `${pokeName}'s Moves:`
-                    // const fourRandomMoves = getRandomSubarray(pokemonInfo.moves, 4);
-                    // fourRandomMoves.forEach( move => {
-                    //     li = document.createElement("li")
-                        
-                    //     li.textContent = capitalize(move.move.name)
-
-                    //     pokeMoves.appendChild(li)
-                    // })
-
                     spriteImageFront.src = pokeSpriteFront
                     spriteImageBack.src = pokeSpriteBack
                     cardText.textContent = pokeType                    
-
 
                 fetch(pokemonInfo.species.url)
                     .then( response => response.json() )
@@ -160,7 +144,7 @@ fetch(pokemonURL)
                 })
             })
             
-            cardBody.append(cardTitle, cardText, addPokemon)
+            cardBody.append(cardTitle, cardText)
             pokeCardFront.append(spriteImageFront, cardBody)
             pokeCardBack.append(spriteImageBack, pokeDescription, addPokemon)
             flipCardInner.append(pokeCardFront, pokeCardBack)

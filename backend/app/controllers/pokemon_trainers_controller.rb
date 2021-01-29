@@ -6,6 +6,12 @@ class PokemonTrainersController < ApplicationController
         render json: pokemonTrainers, include: :pokemon
     end
 
+    def show
+        pokemonTrainer = PokemonTrainer.find(params[:id])
+
+        render json: pokemonTrainer
+    end
+
     def create
         trainer = Trainer.find(pokemon_trainer_params[:trainer_id])
         if Pokemon.find_by(id: pokemon_trainer_params[:pokemon_id])
@@ -19,6 +25,13 @@ class PokemonTrainersController < ApplicationController
 
     def pokemon_trainer_params
         params.require(:pokemon_trainer).permit :trainer_id, :pokemon_id, :name, :pokeType, :image
+    end
+
+    def destroy
+        pokemonTrainer = PokemonTrainer.find(params[:id])
+        pokemonTrainer.destroy
+
+        render json: pokemonTrainer
     end
 
 end

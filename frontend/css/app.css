@@ -12,11 +12,11 @@ html {
   }
 
   #landing-page {
-    background-image: url("img/pokemon-background.jpg");
+    background-image: url("../img/pokemon-background.jpg");
   }
 
   #exit-page {
-    background-image: url("img/pokedex-background.jpg");
+    background-image: url("../img/pokedex-background.jpg");
   }
   
   #main-holder {
@@ -142,3 +142,7 @@ html {
     padding: 2px 16px;
   }
 
+#pokemon-video {
+  width: 95%;
+  height: 75%;
+}
