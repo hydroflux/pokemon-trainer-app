@@ -16307,3 +16307,672 @@ Processing by TrainersController#show as */*
 Completed 200 OK in 74ms (Views: 50.5ms | ActiveRecord: 4.1ms | Allocations: 832743)
 
 
+Started GET "/trainers/71" for ::1 at 2021-01-29 09:36:22 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"71"}
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mTrainer Load (1.8ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (4.4ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 71]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 95ms (Views: 51.3ms | ActiveRecord: 10.6ms | Allocations: 1011510)
+
+
+Started GET "/trainers/null" for ::1 at 2021-01-29 09:38:10 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mTrainer Load (1.0ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 404 Not Found in 30ms (ActiveRecord: 1.0ms | Allocations: 256831)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=null):
+  
+app/controllers/trainers_controller.rb:10:in `show'
+Started GET "/trainers/71" for ::1 at 2021-01-29 09:38:11 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"71"}
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mTrainer Load (1.7ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (11.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 71]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 210ms (Views: 69.4ms | ActiveRecord: 17.7ms | Allocations: 1752612)
+
+
+Started GET "/trainers/null" for ::1 at 2021-01-29 09:38:25 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mTrainer Load (3.6ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 404 Not Found in 20ms (ActiveRecord: 3.6ms | Allocations: 215019)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=null):
+  
+app/controllers/trainers_controller.rb:10:in `show'
+Started GET "/trainers/71" for ::1 at 2021-01-29 09:38:31 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"71"}
+  [1m[36mTrainer Load (0.9ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (3.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 71]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 79ms (Views: 49.5ms | ActiveRecord: 4.6ms | Allocations: 835605)
+
+
+Started GET "/trainers/71" for ::1 at 2021-01-29 09:38:35 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"71"}
+  [1m[36mTrainer Load (4.5ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (1.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 71]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 94ms (Views: 66.6ms | ActiveRecord: 5.7ms | Allocations: 832743)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:38:40 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"71", "pokemon_id"=>31, "name"=>"Nidoqueen", "pokeType"=>"Poison", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"}}
+  [1m[36mTrainer Load (0.9ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (1.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mPokemon Create (6.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 31], ["name", "Nidoqueen"], ["pokeType", "Poison"], ["created_at", "2021-01-29 16:38:40.588328"], ["updated_at", "2021-01-29 16:38:40.588328"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mPokemonTrainer Create (3.7ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 31], ["trainer_id", 71], ["created_at", "2021-01-29 16:38:40.664466"], ["updated_at", "2021-01-29 16:38:40.664466"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+Completed 200 OK in 251ms (Views: 7.8ms | ActiveRecord: 15.9ms | Allocations: 2498408)
+
+
+Started GET "/trainers/71" for ::1 at 2021-01-29 09:38:55 -0700
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mTrainer Load (0.9ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (0.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 71]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 82ms (Views: 57.4ms | ActiveRecord: 1.8ms | Allocations: 909802)
+
+
+Started GET "/trainers/71" for ::1 at 2021-01-29 09:39:18 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"71"}
+  [1m[36mTrainer Load (4.0ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 71]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 83ms (Views: 61.8ms | ActiveRecord: 5.5ms | Allocations: 915551)
+
+
+Started POST "/trainers" for ::1 at 2021-01-29 09:42:06 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"Kara", "gender"=>"girl"}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (3.8ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kara"], ["gender", "girl"], ["created_at", "2021-01-29 16:42:06.443337"], ["updated_at", "2021-01-29 16:42:06.443337"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 78ms (Views: 7.2ms | ActiveRecord: 5.9ms | Allocations: 905425)
+
+
+Started GET "/trainers/72" for ::1 at 2021-01-29 09:42:06 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"72"}
+  [1m[36mTrainer Load (1.7ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (1.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 72]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 123ms (Views: 71.1ms | ActiveRecord: 3.7ms | Allocations: 793899)
+
+
+Started GET "/trainers/72" for ::1 at 2021-01-29 09:42:14 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"72"}
+  [1m[36mTrainer Load (2.7ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (1.5ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 72]]
+Started GET "/trainers/71" for ::1 at 2021-01-29 09:42:14 -0700
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 208ms (Views: 163.1ms | ActiveRecord: 4.2ms | Allocations: 851192)
+
+
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"71"}
+  [1m[36mTrainer Load (1.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (1.7ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 71]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 140ms (Views: 99.0ms | ActiveRecord: 3.1ms | Allocations: 915551)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:42:19 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:42:19 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"72", "pokemon_id"=>9, "name"=>"Blastoise", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"}}
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mTrainer Load (4.6ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"71", "pokemon_id"=>9, "name"=>"Blastoise", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTrainer Load (1.8ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (3.9ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mPokemon Load (1.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (1.9ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 9], ["name", "Blastoise"], ["pokeType", "Water"], ["created_at", "2021-01-29 16:42:20.066936"], ["updated_at", "2021-01-29 16:42:20.066936"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (5191.8ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 9], ["name", "Blastoise"], ["pokeType", "Water"], ["created_at", "2021-01-29 16:42:20.138460"], ["updated_at", "2021-01-29 16:42:20.138460"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mPokemonTrainer Create (14.5ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 9], ["trainer_id", 72], ["created_at", "2021-01-29 16:42:25.428571"], ["updated_at", "2021-01-29 16:42:25.428571"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+Completed 500 Internal Server Error in 5620ms (ActiveRecord: 5196.4ms | Allocations: 3700128)
+
+
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked):
+  
+app/controllers/pokemon_trainers_controller.rb:14:in `create'
+Completed 200 OK in 5773ms (Views: 7.4ms | ActiveRecord: 36.7ms | Allocations: 4861287)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:43:01 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:43:01 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PokemonTrainersController#create as JSON
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"71", "pokemon_id"=>8, "name"=>"Wartortle", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"}}
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"72", "pokemon_id"=>8, "name"=>"Wartortle", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"}}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 8], ["name", "Wartortle"], ["pokeType", "Water"], ["created_at", "2021-01-29 16:43:01.149936"], ["updated_at", "2021-01-29 16:43:01.149936"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 8], ["name", "Wartortle"], ["pokeType", "Water"], ["created_at", "2021-01-29 16:43:01.153024"], ["updated_at", "2021-01-29 16:43:01.153024"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mPokemonTrainer Create (0.6ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 8], ["trainer_id", 71], ["created_at", "2021-01-29 16:43:01.162524"], ["updated_at", "2021-01-29 16:43:01.162524"]]
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.9ms | Allocations: 17907)
+
+
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: pokemons.id):
+  
+app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+Completed 200 OK in 82ms (Views: 0.5ms | ActiveRecord: 3.8ms | Allocations: 60735)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:43:11 -0700
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:43:11 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"71", "pokemon_id"=>55, "name"=>"Golduck", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"}}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"72", "pokemon_id"=>55, "name"=>"Golduck", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 55], ["name", "Golduck"], ["pokeType", "Water"], ["created_at", "2021-01-29 16:43:11.339285"], ["updated_at", "2021-01-29 16:43:11.339285"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemon Create (0.5ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 55], ["name", "Golduck"], ["pokeType", "Water"], ["created_at", "2021-01-29 16:43:11.342449"], ["updated_at", "2021-01-29 16:43:11.342449"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mPokemonTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 55], ["trainer_id", 71], ["created_at", "2021-01-29 16:43:11.346917"], ["updated_at", "2021-01-29 16:43:11.346917"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.9ms | Allocations: 6706)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: pokemons.id):
+  
+app/controllers/pokemon_trainers_controller.rb:14:in `create'
+Completed 200 OK in 39ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 8019)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 72]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 73]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 74]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 75]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 76]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 77]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 78]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 79]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 80]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 81]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 82]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 83]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 84]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 85]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 86]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 87]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 88]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 89]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 65]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 66]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 67]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 68]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 69]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 70]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 71]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 72]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 26]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 31]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 35]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 36]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 55]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 149]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 151]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 152]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 153]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 154]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 155]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 156]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 157]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 371]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Bulbasaur"], ["pokeType", "Grass"], ["created_at", "2021-01-29 16:44:39.837741"], ["updated_at", "2021-01-29 16:44:39.837741"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/bulbasaur.png"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.2ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Squirtle"], ["pokeType", "Water"], ["created_at", "2021-01-29 16:44:39.840814"], ["updated_at", "2021-01-29 16:44:39.840814"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/squirtle.png"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["pokeType", "Fire"], ["created_at", "2021-01-29 16:44:39.843614"], ["updated_at", "2021-01-29 16:44:39.843614"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/charmander.png"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.2ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pidgey"], ["pokeType", "Normal"], ["created_at", "2021-01-29 16:44:39.846357"], ["updated_at", "2021-01-29 16:44:39.846357"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/pidgey.png"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pikachu"], ["pokeType", "Electric"], ["created_at", "2021-01-29 16:44:39.848992"], ["updated_at", "2021-01-29 16:44:39.848992"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/pikachu.png"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.2ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gengar"], ["pokeType", "Ghost"], ["created_at", "2021-01-29 16:44:39.851592"], ["updated_at", "2021-01-29 16:44:39.851592"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/gengar.png"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Create (0.2ms)[0m  [1m[32mINSERT INTO "pokemons" ("name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mew"], ["pokeType", "Psychic"], ["created_at", "2021-01-29 16:44:39.854180"], ["updated_at", "2021-01-29 16:44:39.854180"], ["image", "https://img.pokemondb.net/sprites/diamond-pearl/normal/mew.png"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.2ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jack"], ["gender", "Male"], ["created_at", "2021-01-29 16:44:39.856850"], ["updated_at", "2021-01-29 16:44:39.856850"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.2ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Obinna"], ["gender", "Male"], ["created_at", "2021-01-29 16:44:39.859560"], ["updated_at", "2021-01-29 16:44:39.859560"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Reed"], ["gender", "Male"], ["created_at", "2021-01-29 16:44:39.861981"], ["updated_at", "2021-01-29 16:44:39.861981"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 377], ["trainer_id", 73], ["created_at", "2021-01-29 16:44:39.867543"], ["updated_at", "2021-01-29 16:44:39.867543"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 373], ["trainer_id", 73], ["created_at", "2021-01-29 16:44:39.870285"], ["updated_at", "2021-01-29 16:44:39.870285"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 376], ["trainer_id", 73], ["created_at", "2021-01-29 16:44:39.873020"], ["updated_at", "2021-01-29 16:44:39.873020"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 378], ["trainer_id", 74], ["created_at", "2021-01-29 16:44:39.875492"], ["updated_at", "2021-01-29 16:44:39.875492"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 374], ["trainer_id", 74], ["created_at", "2021-01-29 16:44:39.878255"], ["updated_at", "2021-01-29 16:44:39.878255"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 375], ["trainer_id", 75], ["created_at", "2021-01-29 16:44:39.880946"], ["updated_at", "2021-01-29 16:44:39.880946"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Create (0.3ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 372], ["trainer_id", 75], ["created_at", "2021-01-29 16:44:39.883464"], ["updated_at", "2021-01-29 16:44:39.883464"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/trainers" for ::1 at 2021-01-29 09:45:01 -0700
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"kara", "gender"=>"girl"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "kara"], ["gender", "girl"], ["created_at", "2021-01-29 16:45:01.539099"], ["updated_at", "2021-01-29 16:45:01.539099"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 1946)
+
+
+Started GET "/trainers/76" for ::1 at 2021-01-29 09:45:01 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"76"}
+  [1m[36mTrainer Load (0.4ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 76]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.5ms | Allocations: 4149)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:05 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"71", "pokemon_id"=>60, "name"=>"Poliwag", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"}}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 567)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:05 -0700
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=71):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"72", "pokemon_id"=>60, "name"=>"Poliwag", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"}}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 584)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=72):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:08 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"76", "pokemon_id"=>6, "name"=>"Charizard", "pokeType"=>"Fire", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"}}
+  [1m[36mTrainer Load (0.7ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 6], ["name", "Charizard"], ["pokeType", "Fire"], ["created_at", "2021-01-29 16:45:08.262492"], ["updated_at", "2021-01-29 16:45:08.262492"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mPokemonTrainer Create (0.5ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 6], ["trainer_id", 76], ["created_at", "2021-01-29 16:45:08.270159"], ["updated_at", "2021-01-29 16:45:08.270159"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 5.3ms | Allocations: 4551)
+
+
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:10 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"76", "pokemon_id"=>9, "name"=>"Blastoise", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"}}
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mPokemon Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 9], ["name", "Blastoise"], ["pokeType", "Water"], ["created_at", "2021-01-29 16:45:10.976746"], ["updated_at", "2021-01-29 16:45:10.976746"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:10 -0700
+  [1m[36mPokemonTrainer Create (1.0ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 9], ["trainer_id", 76], ["created_at", "2021-01-29 16:45:10.980973"], ["updated_at", "2021-01-29 16:45:10.980973"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:10 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"72", "pokemon_id"=>72, "name"=>"Tentacool", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"}}
+  [1m[36mTrainer Load (0.5ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 5404)
+
+
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"71", "pokemon_id"=>72, "name"=>"Tentacool", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"}}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms | Allocations: 588)
+
+
+  [1m[36mTrainer Load (0.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=72):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 404 Not Found in 23ms (ActiveRecord: 0.3ms | Allocations: 11936)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=71):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:12 -0700
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"76", "pokemon_id"=>11, "name"=>"Metapod", "pokeType"=>"Bug", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"}}
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:12 -0700
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Started POST "/pokemon_trainers" for ::1 at 2021-01-29 09:45:12 -0700
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:11:in `create'
+Processing by PokemonTrainersController#create as JSON
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"71", "pokemon_id"=>79, "name"=>"Slowpoke", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"}}
+  [1m[36mPokemon Create (0.7ms)[0m  [1m[32mINSERT INTO "pokemons" ("id", "name", "pokeType", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 11], ["name", "Metapod"], ["pokeType", "Bug"], ["created_at", "2021-01-29 16:45:12.827023"], ["updated_at", "2021-01-29 16:45:12.827023"], ["image", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrainer Load (0.3ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+Processing by PokemonTrainersController#create as JSON
+  Parameters: {"pokemon_trainer"=>{"trainer_id"=>"72", "pokemon_id"=>79, "name"=>"Slowpoke", "pokeType"=>"Water", "image"=>"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"}}
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.3ms | Allocations: 1788)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=71):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:14:in `create'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  [1m[36mPokemonTrainer Create (0.4ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("pokemon_id", "trainer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["pokemon_id", 11], ["trainer_id", 76], ["created_at", "2021-01-29 16:45:12.846212"], ["updated_at", "2021-01-29 16:45:12.846212"]]
+Completed 404 Not Found in 15ms (ActiveRecord: 0.4ms | Allocations: 13554)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=72):
+  
+app/controllers/pokemon_trainers_controller.rb:10:in `create'
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pokemon_trainers_controller.rb:16:in `create'
+Completed 200 OK in 40ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 30119)
+
+
+Started GET "/trainers/null" for ::1 at 2021-01-29 09:45:17 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mTrainer Load (0.4ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.4ms | Allocations: 506)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=null):
+  
+app/controllers/trainers_controller.rb:10:in `show'
+Started GET "/trainers/null" for ::1 at 2021-01-29 09:45:17 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 505)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=null):
+  
+app/controllers/trainers_controller.rb:10:in `show'
+Started GET "/trainers/null" for ::1 at 2021-01-29 09:45:17 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 505)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=null):
+  
+app/controllers/trainers_controller.rb:10:in `show'
