@@ -5626,3 +5626,43 @@ Processing by TrainersController#show as HTML
 Completed 200 OK in 120ms (Views: 92.4ms | ActiveRecord: 5.7ms | Allocations: 1241240)
 
 
+Started POST "/trainers" for ::1 at 2021-01-29 09:58:11 -0700
+  [1m[35m (11.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrainersController#create as JSON
+  Parameters: {"trainer"=>{"name"=>"brad", "gender"=>"boy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTrainer Create (1.3ms)[0m  [1m[32mINSERT INTO "trainers" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "brad"], ["gender", "boy"], ["created_at", "2021-01-29 16:58:13.137380"], ["updated_at", "2021-01-29 16:58:13.137380"]]
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trainers_controller.rb:15:in `create'
+Completed 200 OK in 80ms (Views: 0.4ms | ActiveRecord: 8.3ms | Allocations: 9933)
+
+
+Started GET "/trainers/64" for ::1 at 2021-01-29 09:58:13 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"64"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mTrainer Load (0.2ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons" INNER JOIN "pokemon_trainers" ON "pokemons"."id" = "pokemon_trainers"."pokemon_id" WHERE "pokemon_trainers"."trainer_id" = ?[0m  [["trainer_id", 64]]
+  ↳ app/controllers/trainers_controller.rb:11:in `show'
+Completed 200 OK in 357ms (Views: 255.1ms | ActiveRecord: 7.0ms | Allocations: 20107)
+
+
+Started GET "/trainers/null" for ::1 at 2021-01-29 09:58:32 -0700
+Processing by TrainersController#show as */*
+  Parameters: {"id"=>"null"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+  [1m[36mTrainer Load (0.5ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/trainers_controller.rb:10:in `show'
+Completed 404 Not Found in 13ms (ActiveRecord: 2.3ms | Allocations: 3250)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=null):
+  
+app/controllers/trainers_controller.rb:10:in `show'
