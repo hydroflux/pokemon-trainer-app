@@ -16976,3 +16976,455 @@ Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 505)
 ActiveRecord::RecordNotFound (Couldn't find Trainer with 'id'=null):
   
 app/controllers/trainers_controller.rb:10:in `show'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (1.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.8ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 90]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 91]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 92]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 93]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 94]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 95]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 96]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 97]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 98]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemonTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemon_trainers" WHERE "pokemon_trainers"."id" = ?[0m  [["id", 99]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrainer Load (0.4ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 73]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 74]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 75]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrainer Destroy (0.2ms)[0m  [1m[31mDELETE FROM "trainers" WHERE "trainers"."id" = ?[0m  [["id", 76]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 372]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 373]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 374]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 375]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 376]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 377]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPokemon Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pokemons" WHERE "pokemons"."id" = ?[0m  [["id", 378]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pokemon_trainers"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pokemons"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "pokeType" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "image" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "trainers"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_trainer_id" ON "apokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_pokemon_id" ON "apokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "apokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "pokemon_trainers"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "pokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apokemon_trainers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_trainer_id" ON "apokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_pokemon_id" ON "apokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "apokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "pokemon_trainers"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "pokemon_trainers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+, CONSTRAINT "fk_rails_d0b9b6b6fc"
+FOREIGN KEY ("trainer_id")
+  REFERENCES "trainers" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apokemon_trainers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210127172337)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210126230117),
+(20210126231630),
+(20210126232420);
+
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-29 16:53:56.769768"], ["updated_at", "2021-01-29 16:53:56.769768"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "8290a1304e834e86a621c5365bb83fca5d1ead22"], ["created_at", "2021-01-29 16:53:56.774998"], ["updated_at", "2021-01-29 16:53:56.774998"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pokemon_trainers"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "pokemons"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "pokeType" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "image" varchar)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "trainers"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_trainer_id" ON "apokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_pokemon_id" ON "apokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "apokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "pokemon_trainers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "pokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apokemon_trainers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_trainer_id" ON "apokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_pokemon_id" ON "apokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "apokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "pokemon_trainers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "pokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+, CONSTRAINT "fk_rails_d0b9b6b6fc"
+FOREIGN KEY ("trainer_id")
+  REFERENCES "trainers" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apokemon_trainers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210127172337)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210126230117),
+(20210126231630),
+(20210126232420);
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-29 16:53:56.840398"], ["updated_at", "2021-01-29 16:53:56.840398"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-01-29 16:53:56.843646"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "8290a1304e834e86a621c5365bb83fca5d1ead22"], ["created_at", "2021-01-29 16:53:56.847154"], ["updated_at", "2021-01-29 16:53:56.847154"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pokemon_trainers"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pokemons"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "pokeType" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "image" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "trainers"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_trainer_id" ON "apokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_pokemon_id" ON "apokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "apokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "pokemon_trainers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "pokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_trainer_id" ON "apokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_pokemon_id" ON "apokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "apokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "pokemon_trainers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "pokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+, CONSTRAINT "fk_rails_d0b9b6b6fc"
+FOREIGN KEY ("trainer_id")
+  REFERENCES "trainers" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apokemon_trainers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210127172337)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210126230117),
+(20210126231630),
+(20210126232420);
+
+[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-29 16:54:03.782990"], ["updated_at", "2021-01-29 16:54:03.782990"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "8290a1304e834e86a621c5365bb83fca5d1ead22"], ["created_at", "2021-01-29 16:54:03.790203"], ["updated_at", "2021-01-29 16:54:03.790203"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pokemon_trainers"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pokemons"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "pokemons" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "pokeType" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "image" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "trainers"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "trainers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_trainer_id" ON "apokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_pokemon_id" ON "apokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "apokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "pokemon_trainers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "pokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apokemon_trainers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_trainer_id" ON "apokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_apokemon_trainers_on_pokemon_id" ON "apokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "apokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "pokemon_trainers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "pokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "pokemon_trainers" ("id" integer NOT NULL PRIMARY KEY, "pokemon_id" integer NOT NULL, "trainer_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_160b9c2fff"
+FOREIGN KEY ("pokemon_id")
+  REFERENCES "pokemons" ("id")
+, CONSTRAINT "fk_rails_d0b9b6b6fc"
+FOREIGN KEY ("trainer_id")
+  REFERENCES "trainers" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_pokemon_id" ON "pokemon_trainers" ("pokemon_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_pokemon_trainers_on_trainer_id" ON "pokemon_trainers" ("trainer_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "pokemon_trainers" ("id","pokemon_id","trainer_id","created_at","updated_at")
+                     SELECT "id","pokemon_id","trainer_id","created_at","updated_at" FROM "apokemon_trainers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apokemon_trainers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210127172337)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210126230117),
+(20210126231630),
+(20210126232420);
+
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-01-29 16:54:03.856904"], ["updated_at", "2021-01-29 16:54:03.856904"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-01-29 16:54:03.860575"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "8290a1304e834e86a621c5365bb83fca5d1ead22"], ["created_at", "2021-01-29 16:54:03.864012"], ["updated_at", "2021-01-29 16:54:03.864012"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPokemonTrainer Load (0.1ms)[0m  [1m[34mSELECT "pokemon_trainers".* FROM "pokemon_trainers"[0m
+  [1m[36mTrainer Load (0.1ms)[0m  [1m[34mSELECT "trainers".* FROM "trainers"[0m
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT "pokemons".* FROM "pokemons"[0m
