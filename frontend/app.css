@@ -8,9 +8,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     justify-items: center;
     align-items: center;
-  }
-
-  #index-html-page {
     background-image: url("img/pokemon-background.jpg");
     display: grid;
   }

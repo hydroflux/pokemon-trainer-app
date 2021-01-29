@@ -1,5 +1,11 @@
 const queryParams = new URLSearchParams(window.location.search)
 const trainerID = queryParams.get("trainer_id")
+const typeID = queryParams.get("type_id")
+
+// const showNumberPokemon = 988
+const showNumberPokemon = 500
+let pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=${showNumberPokemon}`
+
 fetch(`http://localhost:3000/trainers/${trainerID}`)
     .then( response => response.json() )
     .then( trainer => {
@@ -10,20 +16,61 @@ fetch(`http://localhost:3000/trainers/${trainerID}`)
         myTeamLink.href = `trainer.html?trainer_id=${trainer.id}`
     })
 
+fetch('https://pokeapi.co/api/v2/type')
+    .then( response => response.json() )
+    .then( pokemonTypes => {
+        const pokemonTypeNavList = document.getElementById("pokemon-type-dropdown-list")
 
-// const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=988`
-const pokemonURL = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=150`
+        let allTypeListItem = document.createElement("li")
+        let allTypeLink = document.createElement("a")
+        
+        allTypeListItem.classList = "nav-item"
+        allTypeLink.classList = "nav-link"
+        
+        allTypeLink.textContent = "All"
+        allTypeLink.href = `http://localhost:3001/pokemon.html?trainer_id=${trainerID}`
+
+        allTypeListItem.appendChild(allTypeLink)
+        pokemonTypeNavList.appendChild(allTypeListItem)
+
+        pokemonTypes.results.slice(0,-2).forEach( pokemonType => {
+            let typeListItem = document.createElement("li")
+            let typeLink = document.createElement("a")
+
+            typeListItem.classList = "nav-item"
+            typeLink.classList = "nav-link"
+
+            typeLink.textContent = capitalize(pokemonType.name)
+            typeLink.href = `http://localhost:3001/pokemon.html?trainer_id=${trainerID}&type_id=${pokemonType.url.slice(31,-1)}`
+
+            typeListItem.appendChild(typeLink)
+            pokemonTypeNavList.appendChild(typeListItem)
+        })
+    })
+
+if (typeID) {
+    pokemonURL = `https://pokeapi.co/api/v2/type/${typeID}`
+}
 
 fetch(pokemonURL)
     .then( response => response.json() )
     .then( pokemons => {
         const outerContainer = document.createElement("div")
         const pokeRow = document.createElement("div")
-
+        
         outerContainer.classList = "container px-5 py-5"
         pokeRow.classList = "row"
 
-        pokemons.results.forEach( pokemon => {
+        if (typeID) {
+            pokemons = pokemons.pokemon
+        } else {
+            pokemons = pokemons.results
+        }
+
+        pokemons.forEach( pokemon => {
+
+            if (typeID) { pokemon = pokemon.pokemon } 
+
             const pokeName = capitalize(pokemon.name)
 
             const pokeColumn = document.createElement("div")
@@ -31,7 +78,7 @@ fetch(pokemonURL)
             const flipCardInner = document.createElement("div")
             const pokeCardFront = document.createElement("div")
             const spriteImageFront = document.createElement("img")
-            const pokeMoves = document.createElement("ul")
+            // const pokeMoves = document.createElement("ul")
             const pokeCardBack = document.createElement("div")
             const spriteImageBack = document.createElement("img")
             const cardBody = document.createElement("div")
@@ -45,7 +92,7 @@ fetch(pokemonURL)
             flipCardInner.classList = "flip-card-inner"
             pokeCardFront.classList = "card flip-card-front"
             pokeCardBack.classList = "card flip-card-back"
-            pokeMoves.classList = "card-body"
+            // pokeMoves.classList = "card-body"
             cardBody.classList = "card-body"
             pokeDescription.classList = ("card-body")
             cardTitle.classList = "card-title"
@@ -61,17 +108,17 @@ fetch(pokemonURL)
                     let pokeSpriteFront = pokemonInfo.sprites.front_default
                     let pokeSpriteBack = pokemonInfo.sprites.back_default
 
-                    console.log(pokemonInfo)
+                    // console.log(pokemonInfo)
 
-                    pokeMoves.textContent = `${pokeName}'s Moves:`
-                    const fourRandomMoves = getRandomSubarray(pokemonInfo.moves, 4);
-                    fourRandomMoves.forEach( move => {
-                        li = document.createElement("li")
+                    // pokeMoves.textContent = `${pokeName}'s Moves:`
+                    // const fourRandomMoves = getRandomSubarray(pokemonInfo.moves, 4);
+                    // fourRandomMoves.forEach( move => {
+                    //     li = document.createElement("li")
                         
-                        li.textContent = capitalize(move.move.name)
+                    //     li.textContent = capitalize(move.move.name)
 
-                        pokeMoves.appendChild(li)
-                    })
+                    //     pokeMoves.appendChild(li)
+                    // })
 
                     spriteImageFront.src = pokeSpriteFront
                     spriteImageBack.src = pokeSpriteBack
@@ -81,7 +128,6 @@ fetch(pokemonURL)
                 fetch(pokemonInfo.species.url)
                     .then( response => response.json() )
                     .then( pokemonSpecies => {
-                        console.log(pokemonSpecies.flavor_text_entries[0])
                         pokeDescription.textContent = pokemonSpecies.flavor_text_entries[0].flavor_text
                     })
             })

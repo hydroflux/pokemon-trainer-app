@@ -62,6 +62,10 @@ h1 {
   margin: 20px 20px;
 }
 
+.btn-group-wrapper {
+  text-align: center;
+}
+
 .flip-card {
   background-color: transparent;
   width: 300px;
